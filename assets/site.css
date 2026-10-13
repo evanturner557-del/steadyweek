@@ -1,0 +1,10 @@
+.x-s1{margin-left:auto !important}
+.x-s2{font-size:1.125rem !important;color:var(--muted) !important}
+.x-s3{margin-top:1.5rem !important}
+.x-s4{margin-top:0 !important;border-top:0 !important;padding-top:0 !important}
+.x-s5{position:absolute !important}
+.x-s6{margin:0 !important}
+.x-s7{margin-top:1.25rem !important}
+.x-s8{font-size:clamp(1.75rem,3.6vw,2.5rem) !important}
+.x-s9{color:var(--muted) !important;margin-top:.9rem !important}
+.x-s10{margin-top:.75rem !important;max-width:22rem !important}
