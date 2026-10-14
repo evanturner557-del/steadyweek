@@ -323,3 +323,5 @@ html[data-paused="true"] [data-cta="checkout"] { pointer-events: none; opacity: 
 .launch-facts li { display: flex; gap: .7rem; align-items: flex-start; font-size: .9375rem; color: var(--text); background: var(--bg); border-radius: 12px; padding: .85rem .9rem; }
 .launch-facts .icon { width: 34px; height: 34px; border-radius: 10px; margin: 0; flex: none; }
 .launch-facts .icon svg { width: 18px; height: 18px; }
+
+.section--ink a:not(.btn){color:#fff;text-decoration:underline}
