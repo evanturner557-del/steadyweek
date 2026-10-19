@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self'; base-uri 'self'; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://localreplyloop.goatcounter.com; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self'; base-uri 'self'; object-src 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Steadyweek — pipeline, cash and delivery in one Google Sheet</title>
   <meta name="description" content="One Google Sheet for your pipeline, cash, delivery and a 20-minute weekly review. Built for UK micro-businesses. No new software, no lock-in.">
@@ -12,8 +12,17 @@
   <meta property="og:title" content="Steadyweek — pipeline, cash and delivery in one Google Sheet">
   <meta property="og:description" content="One Google Sheet for your pipeline, cash, delivery and a 20-minute weekly review. Built for UK micro-businesses. No new software, no lock-in.">
   <meta property="og:image" content="https://evanturner557-del.github.io/steadyweek/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Steadyweek logo with the headline: Keep pipeline, cash and delivery in one tidy Google Sheet.">
+  <meta property="og:site_name" content="Steadyweek">
+  <meta property="og:locale" content="en_GB">
   <meta property="og:url" content="https://evanturner557-del.github.io/steadyweek/">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Steadyweek — pipeline, cash and delivery in one Google Sheet">
+  <meta name="twitter:description" content="One Google Sheet for your pipeline, cash, delivery and a 20-minute weekly review. Built for UK micro-businesses. No new software, no lock-in.">
+  <meta name="twitter:image" content="https://evanturner557-del.github.io/steadyweek/assets/og.png">
+  <meta name="twitter:image:alt" content="Steadyweek logo with the headline: Keep pipeline, cash and delivery in one tidy Google Sheet.">
   <link rel="canonical" href="https://evanturner557-del.github.io/steadyweek/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="_shared/fonts/source-serif-4-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -23,6 +32,7 @@
   <script src="assets/config.js"></script>
   <script src="assets/analytics.js" defer></script>
   <script src="_shared/kit.js" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Steadyweek", "url": "https://evanturner557-del.github.io/steadyweek/", "logo": "https://evanturner557-del.github.io/steadyweek/assets/favicon.svg", "description": "One Google Sheet for your pipeline, cash, delivery and a 20-minute weekly review. Built for UK micro-businesses. No new software, no lock-in."}</script>
 </head>
 <body>
 <svg width="0" height="0" aria-hidden="true" focusable="false" class="x-s5">
@@ -90,11 +100,10 @@
   <section class="section section--tint" id="pricing">
     <div class="container">
       <div class="section-head"><span class="eyebrow">Pricing</span><h2>Pay once. Keep it forever.</h2><p>Prices in GBP. Digital product: a Google Sheets template (supplied as an .xlsx file) plus a QuickStart PDF. You get a download link for both as soon as you’ve paid.</p></div>
-      <div class="pricing"><article class="tier tier--featured"><h3>Template</h3><p class="tier__for">Do it yourself with the QuickStart guide.</p>
-          <p class="price"><b>£49</b><span>one-off</span></p><ul class="checks"><li><svg aria-hidden="true"><use href="#i-check"/></svg>7-tab Steadyweek workbook (.xlsx)</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>QuickStart guide (PDF)</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Yours to keep</li></ul><div class="cta-wrap"><a class="btn btn--primary btn--block" href="#contact" data-cta="enquire" data-plan="template">Ask about the Template</a><p class="sub">No payment taken yet.</p></div></article><article class="tier"><h3>Template + setup</h3><p class="tier__for">We set it up with your real data on a call.</p>
-          <p class="price"><b>£149</b><span>one-off</span></p><ul class="checks"><li><svg aria-hidden="true"><use href="#i-check"/></svg>Everything in Template</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>60-minute setup call</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Your pipeline and costs loaded in</li></ul><div class="cta-wrap"><a class="btn btn--ghost btn--block" href="#contact" data-cta="enquire" data-plan="setup">Ask about setup</a></div></article><article class="tier"><h3>Monthly check-in</h3><p class="tier__for">A light monthly review to keep the habit.</p>
-          <p class="price"><b>£39</b><span>/ month</span></p><ul class="checks"><li><svg aria-hidden="true"><use href="#i-check"/></svg>30-minute monthly review</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Template tweaks as you grow</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Cancel any time</li></ul><div class="cta-wrap"><a class="btn btn--ghost btn--block" href="#contact" data-cta="enquire" data-plan="checkin">Ask about check-ins</a></div></article></div>
-      <div class="guarantee"><div class="icon"><svg aria-hidden="true"><use href="#i-refund"/></svg></div><p><strong>30-day refund promise.</strong> If you decide within 30 days of buying the Template or Template + setup that it isn’t for you, you can have a full refund of what you paid. No reason needed. To ask, email steadyweek@agentmail.to.</p><a class="btn btn--ghost btn--sm" href="terms.html#refunds">Refund terms</a></div>
+      <div class="pricing pricing--single"><article class="tier tier--featured"><h3>Template</h3><p class="tier__for">Do it yourself with the QuickStart guide.</p>
+          <p class="price"><b>£49</b><span>one-off</span></p><ul class="checks"><li><svg aria-hidden="true"><use href="#i-check"/></svg>7-tab Steadyweek workbook (.xlsx)</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>QuickStart guide (PDF)</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Yours to keep</li></ul><div class="cta-wrap"><a class="btn btn--primary btn--block" href="#contact" data-cta="enquire" data-plan="template">Ask about the Template</a><p class="sub">No payment taken yet.</p></div></article></div>
+      <p class="tier-more"><strong>Also available:</strong> <a href="#contact" data-cta="enquire-more" data-plan="setup">Template + setup</a>, £149 one-off. A 60-minute setup call where we load in your pipeline and costs.<br><a href="#contact" data-cta="enquire-more" data-plan="checkin">Monthly check-in</a>, £39 / month. A 30-minute review each month. Cancel any time.</p>
+      <div class="guarantee"><div class="icon"><svg aria-hidden="true"><use href="#i-refund"/></svg></div><p><strong>30-day refund promise <span data-draft="refund">(draft)</span>.</strong> If you decide within 30 days of buying the Template or Template + setup that it isn’t for you, you can have a full refund of what you paid. No reason needed. To ask, email steadyweek@agentmail.to.</p><a class="btn btn--ghost btn--sm" href="terms.html#refunds">Refund terms</a></div>
       <p class="fineprint">Steadyweek is a planning tool, not accounting or tax software, and nothing in it is financial advice.</p>
     </div>
   </section>
@@ -130,7 +139,7 @@
     </div>
   </section>
   <section class="section section--ink">
-    <div class="container final-cta"><h2>One Sheet. Twenty minutes a week. Fewer surprises.</h2><p>Template from £49, yours to keep, with a 30-day refund promise.</p>
+    <div class="container final-cta"><h2>One Sheet. Twenty minutes a week. Fewer surprises.</h2><p>Template from £49, yours to keep, with a 30-day refund promise (draft).</p>
       <div class="btn-row"><a class="btn btn--light" href="#pricing" data-cta="final">See the plans</a><a class="btn btn--outline-light" href="#contact" data-cta="final-contact">Ask a question</a></div></div>
   </section>
 </main>

@@ -325,3 +325,7 @@ html[data-paused="true"] [data-cta="checkout"] { pointer-events: none; opacity: 
 .launch-facts .icon svg { width: 18px; height: 18px; }
 
 .section--ink a:not(.btn){color:#fff;text-decoration:underline}
+.pricing--single { max-width: 30rem; margin-inline: auto; }
+@media (min-width: 60rem) { .pricing.pricing--single { grid-template-columns: 1fr; } }
+.tier-more { max-width: 64rem; margin: 1.25rem auto 0; text-align: center; color: var(--muted); font-size: .9375rem; line-height: 1.6; }
+.tier-more a { font-weight: 600; white-space: nowrap; }

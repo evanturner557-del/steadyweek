@@ -126,7 +126,10 @@
     var cash = v("cash"), inc = v("income"), out = v("costs");
     var net = inc - out, res = box.querySelector("[data-runway-out]"), sub = box.querySelector("[data-runway-sub]");
     if (!cash && !inc && !out) { res.textContent = "—"; sub.textContent = "Enter your numbers to see your runway."; return; }
-    if (net >= 0) { res.textContent = "Cash-positive"; sub.textContent = "You bring in " + gbp(net) + " more than you spend each month at today's pace."; return; }
+    // 2026-10-19 UPGRADE W9: net == 0 used to say "£0 more" (e.g. only cash entered). Ask for the monthly figures, or say break-even.
+    if (!inc && !out) { res.textContent = "—"; sub.textContent = "Add what comes in and what goes out each month to see your runway."; return; }
+    if (net === 0) { res.textContent = "Break-even"; sub.textContent = "What comes in matches what you spend each month at today's pace."; return; }
+    if (net > 0) { res.textContent = "Cash-positive"; sub.textContent = "You bring in " + gbp(net) + " more than you spend each month at today's pace."; return; }
     var months = cash / -net;
     res.textContent = (months >= 24 ? "24+" : months.toFixed(1)) + " months";
     sub.textContent = "At today's pace you spend " + gbp(-net) + " more than comes in each month.";
