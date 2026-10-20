@@ -81,7 +81,7 @@
           .then(function (r) { return r.json(); })
           .then(function (j) {
             if (String(j.success) !== "true") throw new Error("fs");
-            if (st) { st.textContent = "Thanks" + (payload.name ? ", " + payload.name.trim().split(" ")[0] : "") + " — your message has been sent. We reply by email."; st.classList.add("is-visible"); }
+            if (st) { st.textContent = "Thanks" + (payload.name ? ", " + payload.name.trim().split(" ")[0] : "") + " — your enquiry has been received."; st.classList.add("is-visible"); }
             track("contact_sent", { plan: payload.plan || null }); form.reset();
           })
           .catch(function () { form.__fsFallback = true; if (st) { st.textContent = "Sending didn't work — opening your email app instead."; st.classList.add("is-visible"); } form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event("submit", { cancelable: true })); });
