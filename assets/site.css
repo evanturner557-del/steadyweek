@@ -8,3 +8,6 @@
 .x-s8{font-size:clamp(1.75rem,3.6vw,2.5rem) !important}
 .x-s9{color:var(--muted) !important;margin-top:.9rem !important}
 .x-s10{margin-top:.75rem !important;max-width:22rem !important}
+
+.footer-legal{margin:12px 0 0;font-size:.8125rem;line-height:1.5;opacity:.8}
+.footer-legal a{color:inherit}
